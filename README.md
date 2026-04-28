@@ -14,6 +14,11 @@ The goal is to showcase SRE/DevOps skills, including Infrastructure as Code, AWS
 - Nginx
 - GitHub
 
+## Required Tools
+- Terraform
+- AWS CLI
+- Git
+
 ## Architecture
 GitHub Repository → Terraform → AWS EC2 → Linux User Data Script → Nginx Web Server
 
@@ -21,7 +26,7 @@ GitHub Repository → Terraform → AWS EC2 → Linux User Data Script → Nginx
 - Infrastructure as Code using Terraform
 - Automated EC2 provisioning
 - Linux server bootstrapping using Bash
-- Secure SSH access using restricted IP
+- Secure SSH access using a restricted IP
 - HTTP access through security groups
 - Repeatable and version-controlled cloud infrastructure
 
@@ -34,3 +39,15 @@ terraform validate
 terraform plan
 terraform apply
 terraform destroy
+```
+## Check Output
+
+```bash
+http://EC2_PUBLIC_IP
+```
+
+### Expected Output
+
+```bash
+SRE Terraform Automation 
+```
